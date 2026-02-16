@@ -1,0 +1,1005 @@
+Last login: Fri Feb 13 17:24:09 on ttys000
+echo $SHELL%                                                                    benforshay@Bens-iMac ~ % echo $SHELL
+/bin/zsh
+benforshay@Bens-iMac ~ % /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+==> Checking for `sudo` access (which may request your password)...
+Password:
+==> You are using macOS 10.15.
+==> We (and Apple) do not provide support for this old version.
+This installation may not succeed.
+After installation, you will encounter build failures with some formulae.
+Please create pull requests instead of asking for help on Homebrew's GitHub,
+Twitter or any other official channels. You are responsible for resolving any
+issues you experience while you are running this old version.
+
+==> This script will install:
+/usr/local/bin/brew
+/usr/local/share/doc/homebrew
+/usr/local/share/man/man1/brew.1
+/usr/local/share/zsh/site-functions/_brew
+/usr/local/etc/bash_completion.d/brew
+/usr/local/Homebrew
+==> The following existing directories will be made group writable:
+/usr/local/bin
+/usr/local/sbin
+==> The following existing directories will have their owner set to benforshay:
+/usr/local/bin
+/usr/local/sbin
+==> The following existing directories will have their group set to admin:
+/usr/local/bin
+/usr/local/sbin
+==> The following new directories will be created:
+/usr/local/etc
+/usr/local/include
+/usr/local/lib
+/usr/local/share
+/usr/local/var
+/usr/local/opt
+/usr/local/share/zsh
+/usr/local/share/zsh/site-functions
+/usr/local/var/homebrew
+/usr/local/var/homebrew/linked
+/usr/local/Cellar
+/usr/local/Caskroom
+/usr/local/Frameworks
+
+Press RETURN/ENTER to continue or any other key to abort:
+==> /usr/bin/sudo /bin/chmod u+rwx /usr/local/bin /usr/local/sbin
+==> /usr/bin/sudo /bin/chmod g+rwx /usr/local/bin /usr/local/sbin
+==> /usr/bin/sudo /usr/sbin/chown benforshay /usr/local/bin /usr/local/sbin
+==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local/bin /usr/local/sbin
+==> /usr/bin/sudo /bin/mkdir -p /usr/local/etc /usr/local/include /usr/local/lib /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /bin/chmod ug=rwx /usr/local/etc /usr/local/include /usr/local/lib /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /bin/chmod go-w /usr/local/share/zsh /usr/local/share/zsh/site-functions
+==> /usr/bin/sudo /usr/sbin/chown benforshay /usr/local/etc /usr/local/include /usr/local/lib /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local/etc /usr/local/include /usr/local/lib /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /bin/mkdir -p /usr/local/Homebrew
+==> /usr/bin/sudo /usr/sbin/chown -R benforshay:admin /usr/local/Homebrew
+==> Downloading and installing Homebrew...
+remote: Enumerating objects: 321350, done.
+remote: Counting objects: 100% (575/575), done.
+remote: Compressing objects: 100% (272/272), done.
+remote: Total 321350 (delta 435), reused 347 (delta 303), pack-reused 320775 (from 2)
+Receiving objects: 100% (321350/321350), 105.94 MiB | 19.96 MiB/s, done.
+Resolving deltas: 100% (227729/227729), done.
+remote: Enumerating objects: 55, done.
+remote: Counting objects: 100% (34/34), done.
+remote: Total 55 (delta 34), reused 34 (delta 34), pack-reused 21 (from 1)
+Unpacking objects: 100% (55/55), done.
+==> Updating Homebrew...
+==> Downloading https://ghcr.io/v2/homebrew/core/portable-ruby/blobs/sha256:80c194381e990a4967a1ae44b8242b688e6a17ab590865a38671137677411469
+######################################################################### 100.0%
+==> Pouring portable-ruby-3.4.8.catalina.bottle.tar.gz
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate formulae and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics data has been sent yet (nor will any be during this install run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Next steps:
+- Run these commands in your terminal to add Homebrew to your PATH:
+    echo >> /Users/benforshay/.zprofile
+    echo 'eval "$(/usr/local/bin/brew shellenv zsh)"' >> /Users/benforshay/.zprofile
+    eval "$(/usr/local/bin/brew shellenv zsh)"
+- Run brew help to get started
+- Further documentation:
+    https://docs.brew.sh
+
+benforshay@Bens-iMac ~ % echo $SHELL
+/bin/zsh
+benforshay@Bens-iMac ~ % echo 'eval "$(/usr/local/bin/brew shellenv)"' >> ~/.zshrc
+eval "$(/usr/local/bin/brew shellenv)"
+benforshay@Bens-iMac ~ % brew help
+Example usage:
+  brew search TEXT|/REGEX/
+  brew info [FORMULA|CASK...]
+  brew install FORMULA|CASK...
+  brew update
+  brew upgrade [FORMULA|CASK...]
+  brew uninstall FORMULA|CASK...
+  brew list [FORMULA|CASK...]
+
+Troubleshooting:
+  brew config
+  brew doctor
+  brew install --verbose --debug FORMULA|CASK
+
+Contributing:
+  brew create URL [--no-fetch]
+  brew edit [FORMULA|CASK...]
+
+Further help:
+  brew commands
+  brew help [COMMAND]
+  man brew
+  https://docs.brew.sh
+benforshay@Bens-iMac ~ % brew install python
+✔︎ JSON API formula.jws.json                                                              Downloaded   32.0MB/ 32.0MB
+✔︎ JSON API cask.jws.json                                                                 Downloaded   15.3MB/ 15.3MB
+Warning: You are using macOS 10.15.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+==> Fetching downloads for: python@3.14
+✔︎ API Source python@3.14.rb                                                              Verified     23.7KB/ 23.7KB
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/68ba2e10c4cf6ca6f60049c1956a82db4a53801f/Fo
+Already downloaded: /Users/benforshay/Library/Caches/Homebrew/downloads/57ca01ca87373740dfb4261a56dad9a26de3c02425a5cf098de5ff8d07a7bd67--mpdecimal.rb
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/68ba2e10c4cf6ca6f60049c1956a82db4a53801f/Fo
+Already downloaded: /Users/benforshay/Library/Caches/Homebrew/downloads/a18222ae89fb6d2b642a1ac46f7067c4ba718ea1e50ebb79d8f7396b2f848db1--openssl@3.rb
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/68ba2e10c4cf6ca6f60049c1956a82db4a53801f/Fo
+Already downloaded: /Users/benforshay/Library/Caches/Homebrew/downloads/afccf2b74c4f2afa5e926ce584783e90fdaf77cfe9b4864c0dfb6e18dd8c315d--readline.rb
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/68ba2e10c4cf6ca6f60049c1956a82db4a53801f/Fo
+Already downloaded: /Users/benforshay/Library/Caches/Homebrew/downloads/5d75b28ea4115e122d16cdfe57ef69f0764242ddec9083706859f2582707b17f--sqlite.rb
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/68ba2e10c4cf6ca6f60049c1956a82db4a53801f/Fo
+Already downloaded: /Users/benforshay/Library/Caches/Homebrew/downloads/dbf53a4c4cb560920d25588542f06709f28c6ed3863160f4b4c63bc0cfd5f180--xz.rb
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/68ba2e10c4cf6ca6f60049c1956a82db4a53801f/Fo
+Already downloaded: /Users/benforshay/Library/Caches/Homebrew/downloads/49a5fc17743f1a8010bfb9aacfd44ee25d7afbdfaa8fbd20b8342473a91b016c--lz4.rb
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/68ba2e10c4cf6ca6f60049c1956a82db4a53801f/Fo
+Already downloaded: /Users/benforshay/Library/Caches/Homebrew/downloads/31de91eb69b3aec5bf690a88d59c0c70f2d1127a412b6c23bb9448c070cfeb96--cmake.rb
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/68ba2e10c4cf6ca6f60049c1956a82db4a53801f/Fo
+Already downloaded: /Users/benforshay/Library/Caches/Homebrew/downloads/621fcc8df513466731f3f35056da3365a886c7fccf41d8b6912b9ba42c9eaf74--zstd.rb
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/68ba2e10c4cf6ca6f60049c1956a82db4a53801f/Fo
+Already downloaded: /Users/benforshay/Library/Caches/Homebrew/downloads/c1c9ab08f10509367c54b81d2bf6f4b5fd4bd9d0ee65e4e103aa8b64e0427398--pkgconf.rb
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/68ba2e10c4cf6ca6f60049c1956a82db4a53801f/Fo
+Already downloaded: /Users/benforshay/Library/Caches/Homebrew/downloads/b07e20ee1df17da178773de8df973e41c70ff0216478a99b2828fc9a8d4f0863--lzip.rb
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/68ba2e10c4cf6ca6f60049c1956a82db4a53801f/Fo
+Already downloaded: /Users/benforshay/Library/Caches/Homebrew/downloads/95c1bc809bb33e8d6649493f8c39d31c77caa93c8f8a609fb5f43b58170e5745--expat.rb
+✔︎ API Source mpdecimal.rb                                                                Verified      2.7KB/  2.7KB
+✔︎ Formula mpdecimal (4.0.1)                                                              Verified    316.3KB/316.3KB
+✔︎ Bottle Manifest ca-certificates (2025-12-02)                                           Downloaded    2.0KB/  2.0KB
+✔︎ Bottle ca-certificates (2025-12-02)                                                    Downloaded  131.8KB/131.8KB
+✔︎ API Source openssl@3.rb                                                                Verified      7.4KB/  7.4KB
+✔︎ Formula openssl@3 (3.6.1)                                                              Verified     54.9MB/ 54.9MB
+✔︎ API Source readline.rb                                                                 Verified      4.5KB/  4.5KB
+✔︎ Patch readline83-001                                                                   Verified      1.8KB/  1.8KB
+✔︎ Patch readline83-002                                                                   Verified      1.6KB/  1.6KB
+✔︎ Patch readline83-003                                                                   Verified      2.3KB/  2.3KB
+✔︎ Formula readline (8.3.3)                                                               Verified      3.4MB/  3.4MB
+✔︎ API Source sqlite.rb                                                                   Verified      3.4KB/  3.4KB
+✔︎ Formula sqlite (3.51.2)                                                                Verified      3.2MB/  3.2MB
+✔︎ API Source xz.rb                                                                       Verified      2.5KB/  2.5KB
+✔︎ Formula xz (5.8.2)                                                                     Verified      2.7MB/  2.7MB
+✔︎ API Source lz4.rb                                                                      Verified      2.5KB/  2.5KB
+✔︎ Formula lz4 (1.10.0)                                                                   Verified    387.1KB/387.1KB
+✔︎ API Source cmake.rb                                                                    Verified      3.4KB/  3.4KB
+✔︎ Patch 6347854fa279cda0682c72dffbb402a0ce29ba51.patch?full_index=1                      Verified      4.4KB/  4.4KB
+✔︎ Formula cmake (4.2.3)                                                                  Verified     12.3MB/ 12.3MB
+✔︎ API Source zstd.rb                                                                     Verified      3.6KB/  3.6KB
+✔︎ Formula zstd (1.5.7)                                                                   Verified      2.5MB/  2.5MB
+✔︎ API Source pkgconf.rb                                                                  Verified      4.2KB/  4.2KB
+✔︎ Formula pkgconf (2.5.1)                                                                Verified    328.1KB/328.1KB
+✔︎ API Source lzip.rb                                                                     Verified      2.3KB/  2.3KB
+✔︎ Formula lzip (1.25)                                                                    Verified    115.6KB/115.6KB
+✔︎ API Source expat.rb                                                                    Verified      2.8KB/  2.8KB
+✔︎ Formula expat (2.7.4)                                                                  Verified    505.7KB/505.7KB
+✔︎ Resource python@3.14--flit-core                                                        Verified     53.7KB/ 53.7KB
+✔︎ Resource python@3.14--packaging                                                        Verified    143.4KB/143.4KB
+✔︎ Resource python@3.14--pip                                                              Verified      1.8MB/  1.8MB
+✔︎ Resource python@3.14--wheel                                                            Verified     60.6KB/ 60.6KB
+✔︎ Patch 3.13-sysconfig.diff                                                              Verified      1.8KB/  1.8KB
+✔︎ Formula python@3.14 (3.14.3)                                                           Verified     31.1MB/ 31.1MB
+==> Installing dependencies for python@3.14: pkgconf, mpdecimal, ca-certificates, openssl@3, readline, sqlite, xz, lz4, cmake, zstd, lzip and expat
+==> Installing python@3.14 dependency: pkgconf
+==> ./configure --disable-silent-rules --with-pkg-config-dir=/usr/local/lib/pkgconfig:/usr/local/share/pkgconfig:/us
+==> make
+==> make install
+🍺  /usr/local/Cellar/pkgconf/2.5.1: 28 files, 470KB, built in 43 seconds
+==> Installing python@3.14 dependency: mpdecimal
+==> ./configure
+==> make
+==> make install
+🍺  /usr/local/Cellar/mpdecimal/4.0.1: 22 files, 646.1KB, built in 35 seconds
+==> Installing python@3.14 dependency: ca-certificates
+==> Pouring ca-certificates--2025-12-02.all.bottle.1.tar.gz
+==> Regenerating CA certificate bundle from keychain, this may take a while...
+🍺  /usr/local/Cellar/ca-certificates/2025-12-02: 4 files, 236.4KB
+==> Installing python@3.14 dependency: openssl@3
+==> perl ./Configure --prefix=/usr/local/Cellar/openssl@3/3.6.1 --openssldir=/usr/local/etc/openssl@3 --libdir=lib n
+==> make
+==> make install MANDIR=/usr/local/Cellar/openssl@3/3.6.1/share/man MANSUFFIX=ssl
+==> make HARNESS_JOBS=4 test TESTS=-test_afalg
+Warning: The post-install step did not complete successfully
+You can try again using:
+  brew postinstall openssl@3
+==> Summary
+🍺  /usr/local/Cellar/openssl@3/3.6.1: 7,615 files, 38.2MB, built in 11 minutes 37 seconds
+==> Installing python@3.14 dependency: readline
+==> Patching
+==> Applying readline83-001
+==> Applying readline83-002
+==> Applying readline83-003
+==> ./configure --with-curses
+==> make install SHLIB_LIBS=-lcurses
+🍺  /usr/local/Cellar/readline/8.3.3: 56 files, 2.6MB, built in 45 seconds
+==> Installing python@3.14 dependency: sqlite
+==> ./configure --enable-readline --disable-editline --enable-session --with-readline-cflags=-I/usr/local/opt/readli
+==> make install
+🍺  /usr/local/Cellar/sqlite/3.51.2_1: 13 files, 5.2MB, built in 53 seconds
+==> Installing python@3.14 dependency: xz
+==> ./configure --disable-silent-rules --disable-nls
+==> make check
+==> make install
+🍺  /usr/local/Cellar/xz/5.8.2: 96 files, 2.6MB, built in 1 minute 9 seconds
+==> Installing python@3.14 dependency: lz4
+==> make install PREFIX=/usr/local/Cellar/lz4/1.10.0
+🍺  /usr/local/Cellar/lz4/1.10.0: 24 files, 810.2KB, built in 17 seconds
+==> Installing python@3.14 dependency: cmake
+==> Patching
+==> Applying 6347854fa279cda0682c72dffbb402a0ce29ba51.patch
+==> ./bootstrap --prefix=/usr/local/Cellar/cmake/4.2.3 --no-system-libs --parallel=4 --datadir=/share/cmake --docdir
+==> make
+==> make install
+🍺  /usr/local/Cellar/cmake/4.2.3: 4,016 files, 72MB, built in 18 minutes 47 seconds
+==> Installing python@3.14 dependency: zstd
+==> cmake -S build/cmake -B builddir -DBUILD_SHARED_LIBS=ON -DZSTD_PROGRAMS_LINK_SHARED=ON -DZSTD_BUILD_CONTRIB=ON -
+==> cmake --build builddir
+==> cmake --install builddir
+🍺  /usr/local/Cellar/zstd/1.5.7_1: 32 files, 2.8MB, built in 1 minute
+==> Installing python@3.14 dependency: lzip
+==> ./configure CXX=clang++ CXXFLAGS=
+==> make check
+==> make install
+🍺  /usr/local/Cellar/lzip/1.25: 11 files, 239.3KB, built in 14 seconds
+==> Installing python@3.14 dependency: expat
+==> ./configure --mandir=/usr/local/Cellar/expat/2.7.4/share/man
+==> make install
+🍺  /usr/local/Cellar/expat/2.7.4: 23 files, 724.3KB, built in 30 seconds
+==> Installing python@3.14
+==> Patching
+==> Applying 3.13-sysconfig.diff
+==> ./configure --enable-ipv6 --datarootdir=/usr/local/Cellar/python@3.14/3.14.3_1/share --datadir=/usr/local/Cellar
+==> make
+==> make install PYTHONAPPSDIR=/usr/local/Cellar/python@3.14/3.14.3_1
+==> make frameworkinstallextras PYTHONAPPSDIR=/usr/local/Cellar/python@3.14/3.14.3_1/share/python@3.14
+==> /usr/local/Cellar/python@3.14/3.14.3_1/bin/python3.14 -m venv /private/tmp/pythonA3.14-20260213-26895-can86m/Pyt
+==> /private/tmp/pythonA3.14-20260213-26895-can86m/Python-3.14.3/whl_build/bin/pip3 install -v --no-binary :all: --n
+==> /private/tmp/pythonA3.14-20260213-26895-can86m/Python-3.14.3/whl_build/bin/pip3 install -v --no-binary :all: --n
+==> /private/tmp/pythonA3.14-20260213-26895-can86m/Python-3.14.3/whl_build/bin/pip3 wheel -v --no-binary :all: --no-
+==> /private/tmp/pythonA3.14-20260213-26895-can86m/Python-3.14.3/whl_build/bin/pip3 wheel -v --no-binary :all: --no-
+==> /usr/local/Cellar/python@3.14/3.14.3_1/bin/python3.14 -Im ensurepip
+==> /usr/local/Cellar/python@3.14/3.14.3_1/bin/python3.14 -Im pip install -v --no-index --upgrade --isolated --targe
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/idle3
+Target /usr/local/bin/idle3
+already exists. You may want to remove it:
+  rm '/usr/local/bin/idle3'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite python@3.14
+
+To list all files that would be deleted:
+  brew link --overwrite python@3.14 --dry-run
+
+Possible conflicting files are:
+/usr/local/bin/idle3 -> /Library/Frameworks/Python.framework/Versions/3.14/bin/idle3
+/usr/local/bin/idle3.14 -> /Library/Frameworks/Python.framework/Versions/3.14/bin/idle3.14
+/usr/local/bin/pip3 -> /Library/Frameworks/Python.framework/Versions/3.14/bin/pip3
+/usr/local/bin/pip3.14 -> /Library/Frameworks/Python.framework/Versions/3.14/bin/pip3.14
+/usr/local/bin/pydoc3 -> /Library/Frameworks/Python.framework/Versions/3.14/bin/pydoc3
+/usr/local/bin/pydoc3.14 -> /Library/Frameworks/Python.framework/Versions/3.14/bin/pydoc3.14
+/usr/local/bin/python3 -> /Library/Frameworks/Python.framework/Versions/3.14/bin/python3
+/usr/local/bin/python3-config -> /Library/Frameworks/Python.framework/Versions/3.14/bin/python3-config
+/usr/local/bin/python3.14 -> /Library/Frameworks/Python.framework/Versions/3.14/bin/python3.14
+/usr/local/bin/python3.14-config -> /Library/Frameworks/Python.framework/Versions/3.14/bin/python3.14-config
+==> Caveats
+Python is installed as
+  /usr/local/bin/python3
+
+Unversioned symlinks `python`, `python-config`, `pip` etc. pointing to
+`python3`, `python3-config`, `pip3` etc., respectively, are installed into
+  /usr/local/opt/python@3.14/libexec/bin
+
+`idle3.14` requires tkinter, which is available separately:
+  brew install python-tk@3.14
+
+See: https://docs.brew.sh/Homebrew-and-Python
+==> Summary
+🍺  /usr/local/Cellar/python@3.14/3.14.3_1: 9,697 files, 238.1MB, built in 11 minutes 52 seconds
+==> Running `brew cleanup python@3.14`...
+Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+Removing: /Users/benforshay/Library/Caches/Homebrew/python@3.14--3.14.3.tgz... (31MB)
+Removing: /Users/benforshay/Library/Caches/Homebrew/python@3.14--flit-core--3.12.0.tar.gz... (53.7KB)
+Removing: /Users/benforshay/Library/Caches/Homebrew/python@3.14--packaging--26.0.tar.gz... (143.4KB)
+Removing: /Users/benforshay/Library/Caches/Homebrew/python@3.14--patch--9f2eae1d08720b06ac3d9ef1999c09388b9db39dfb52687fc261ff820bff20c3.diff... (1.8KB)
+Removing: /Users/benforshay/Library/Caches/Homebrew/python@3.14--pip--26.0.tar.gz... (1.8MB)
+Removing: /Users/benforshay/Library/Caches/Homebrew/python@3.14--wheel--0.46.3.tar.gz... (60.6KB)
+==> Caveats
+==> python@3.14
+Python is installed as
+  /usr/local/bin/python3
+
+Unversioned symlinks `python`, `python-config`, `pip` etc. pointing to
+`python3`, `python3-config`, `pip3` etc., respectively, are installed into
+  /usr/local/opt/python@3.14/libexec/bin
+
+`idle3.14` requires tkinter, which is available separately:
+  brew install python-tk@3.14
+
+See: https://docs.brew.sh/Homebrew-and-Python
+benforshay@Bens-iMac ~ % brew --version
+Homebrew 5.0.14
+benforshay@Bens-iMac ~ % python --version
+Python 2.7.16
+benforshay@Bens-iMac ~ % python3 --version
+Python 3.14.3
+benforshay@Bens-iMac ~ % cd ~/Developer
+benforshay@Bens-iMac Developer % pwd
+/Users/benforshay/Developer
+benforshay@Bens-iMac Developer % cd ..
+benforshay@Bens-iMac ~ % mkdir~/Developer/AudioPlayer
+zsh: no such file or directory: mkdir~/Developer/AudioPlayer
+benforshay@Bens-iMac ~ % mkdir ~/Developer/AudioPlayer
+benforshay@Bens-iMac ~ % mpv --version 
+zsh: command not found: mpv
+benforshay@Bens-iMac ~ % brew install mpv
+✔︎ JSON API formula.jws.json                                                              Downloaded   32.0MB/ 32.0MB
+✔︎ JSON API cask.jws.json                                                                 Downloaded   15.3MB/ 15.3MB
+Warning: You are using macOS 10.15.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+==> Fetching downloads for: mpv
+✔︎ API Source mpv.rb                                                                      Verified      4.0KB/  4.0KB
+mpv: A full installation of Xcode.app is required to compile
+this software. Installing just the Command Line Tools is not sufficient.
+
+Xcode can be installed from the App Store.
+deno: A full installation of Xcode.app 15.0 is required to compile
+this software. Installing just the Command Line Tools is not sufficient.
+
+Xcode 15.0 cannot be installed on macOS 10.15.
+You must upgrade your version of macOS.
+molten-vk: A full installation of Xcode.app 11.7 is required to compile
+this software. Installing just the Command Line Tools is not sufficient.
+
+Xcode can be installed from the App Store.
+Error: mpv: Unsatisfied requirements failed this build.
+benforshay@Bens-iMac ~ %              ls ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents
+benforshay@Bens-iMac ~ % find~ -name"*.txt" -maxdepth 4
+zsh: command not found: find~
+benforshay@Bens-iMac ~ % find ~ -name "*.txt" -maxdepth 4
+/Users/benforshay/.config/BitLord/adblock/easylist.txt
+/Users/benforshay/Library/Application Support/com.qobuz.downloader/logs.txt
+find: /Users/benforshay/Library/Application Support/MobileSync: Operation not permitted
+find: /Users/benforshay/Library/Application Support/CallHistoryTransactions: Operation not permitted
+/Users/benforshay/Library/Application Support/CloudDocs/25E70145-C921-57A6-B2C6-FC40B24395E9.txt
+find: /Users/benforshay/Library/Application Support/com.apple.sharedfilelist: Operation not permitted
+/Users/benforshay/Library/Application Support/com.operasoftware.Opera/opera_shutdown_ms.txt
+find: /Users/benforshay/Library/Application Support/com.apple.TCC: Operation not permitted
+find: /Users/benforshay/Library/Application Support/FileProvider: Operation not permitted
+find: /Users/benforshay/Library/Application Support/CallHistoryDB: Operation not permitted
+/Users/benforshay/Library/Application Support/JREInstaller/JREInstallLog.txt
+find: /Users/benforshay/Library/Autosave Information: Operation not permitted
+find: /Users/benforshay/Library/IdentityServices: Operation not permitted
+find: /Users/benforshay/Library/Messages: Operation not permitted
+find: /Users/benforshay/Library/HomeKit: Operation not permitted
+find: /Users/benforshay/Library/Sharing: Operation not permitted
+find: /Users/benforshay/Library/Mail: Operation not permitted
+/Users/benforshay/Library/OpenAudible/tmp/log.txt
+find: /Users/benforshay/Library/Safari: Operation not permitted
+find: /Users/benforshay/Library/Suggestions: Operation not permitted
+/Users/benforshay/Library/Group Containers/UBF8T346G9.ms/Microsoft AutoUpdate.MERP.params.txt
+/Users/benforshay/Library/Group Containers/UBF8T346G9.ms/Microsoft Update Assistant.MERP.params.txt
+find: /Users/benforshay/Library/Containers/com.apple.VoiceMemos: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.archiveutility: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.Home: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.Safari: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.iChat: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.CloudDocs.MobileDocumentsFileProvider: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.mail: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.news: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.stocks: Operation not permitted
+find: /Users/benforshay/Library/PersonalizationPortrait: Operation not permitted
+find: /Users/benforshay/Library/Metadata/CoreSpotlight: Operation not permitted
+find: /Users/benforshay/Library/Metadata/com.apple.IntelligentSuggestions: Operation not permitted
+find: /Users/benforshay/Library/Cookies: Operation not permitted
+find: /Users/benforshay/Library/Caches/CloudKit: Operation not permitted
+find: /Users/benforshay/Library/Caches/com.apple.Safari: Operation not permitted
+/Users/benforshay/Library/Caches/Homebrew/external_commands_list.txt
+/Users/benforshay/Library/Caches/Homebrew/all_commands_list.txt
+/Users/benforshay/Library/Caches/com.apple.AppleMediaServices/sap-setup-cert.txt
+/Users/benforshay/Library/Caches/com.apple.cache_delete/CacheDeletePurgeHistory.txt
+find: /Users/benforshay/Library/Caches/com.apple.ap.adprivacyd: Operation not permitted
+/Users/benforshay/Public/Full Circle with Michael Palin/If this torrent is dead.txt
+/Users/benforshay/Public/Full Circle with Michael Palin/About this torrent.txt
+/Users/benforshay/Public/Full Circle with Michael Palin/[TGx]Downloaded from torrentgalaxy.to.txt
+/Users/benforshay/Public/Full Circle with Michael Palin/Downloaded from Demonoid - www.dnoid.is.txt
+find: /Users/benforshay/.Trash: Operation not permitted
+/Users/benforshay/.vscode/extensions/ms-python.vscode-pylance-2025.4.1/ThirdPartyNotices-Repository.txt
+/Users/benforshay/.vscode/extensions/ms-python.vscode-pylance-2025.4.1/NOTICE.txt
+/Users/benforshay/.vscode/extensions/ms-python.vscode-pylance-2025.4.1/LICENSE.txt
+/Users/benforshay/.vscode/extensions/ms-python.python-2026.0.0-darwin-x64/ThirdPartyNotices-Repository.txt
+/Users/benforshay/.vscode/extensions/ms-python.python-2026.0.0-darwin-x64/ThirdPartyNotices.txt
+/Users/benforshay/.vscode/extensions/ms-python.python-2026.0.0-darwin-x64/requirements.txt
+/Users/benforshay/.vscode/extensions/ms-python.python-2026.0.0-darwin-x64/LICENSE.txt
+/Users/benforshay/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-x64/ThirdPartyNotices.txt
+/Users/benforshay/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-x64/LICENSE.txt
+benforshay@Bens-iMac ~ % find ~ -name "*.txt" -maxdepth 4 -print                                  
+/Users/benforshay/.config/BitLord/adblock/easylist.txt
+/Users/benforshay/Library/Application Support/com.qobuz.downloader/logs.txt
+find: /Users/benforshay/Library/Application Support/MobileSync: Operation not permitted
+find: /Users/benforshay/Library/Application Support/CallHistoryTransactions: Operation not permitted
+/Users/benforshay/Library/Application Support/CloudDocs/25E70145-C921-57A6-B2C6-FC40B24395E9.txt
+find: /Users/benforshay/Library/Application Support/com.apple.sharedfilelist: Operation not permitted
+/Users/benforshay/Library/Application Support/com.operasoftware.Opera/opera_shutdown_ms.txt
+find: /Users/benforshay/Library/Application Support/com.apple.TCC: Operation not permitted
+find: /Users/benforshay/Library/Application Support/FileProvider: Operation not permitted
+find: /Users/benforshay/Library/Application Support/CallHistoryDB: Operation not permitted
+/Users/benforshay/Library/Application Support/JREInstaller/JREInstallLog.txt
+find: /Users/benforshay/Library/Autosave Information: Operation not permitted
+find: /Users/benforshay/Library/IdentityServices: Operation not permitted
+find: /Users/benforshay/Library/Messages: Operation not permitted
+find: /Users/benforshay/Library/HomeKit: Operation not permitted
+find: /Users/benforshay/Library/Sharing: Operation not permitted
+find: /Users/benforshay/Library/Mail: Operation not permitted
+/Users/benforshay/Library/OpenAudible/tmp/log.txt
+find: /Users/benforshay/Library/Safari: Operation not permitted
+find: /Users/benforshay/Library/Suggestions: Operation not permitted
+/Users/benforshay/Library/Group Containers/UBF8T346G9.ms/Microsoft AutoUpdate.MERP.params.txt
+/Users/benforshay/Library/Group Containers/UBF8T346G9.ms/Microsoft Update Assistant.MERP.params.txt
+find: /Users/benforshay/Library/Containers/com.apple.VoiceMemos: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.archiveutility: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.Home: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.Safari: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.iChat: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.CloudDocs.MobileDocumentsFileProvider: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.mail: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.news: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.stocks: Operation not permitted
+find: /Users/benforshay/Library/PersonalizationPortrait: Operation not permitted
+find: /Users/benforshay/Library/Metadata/CoreSpotlight: Operation not permitted
+find: /Users/benforshay/Library/Metadata/com.apple.IntelligentSuggestions: Operation not permitted
+find: /Users/benforshay/Library/Cookies: Operation not permitted
+find: /Users/benforshay/Library/Caches/CloudKit: Operation not permitted
+find: /Users/benforshay/Library/Caches/com.apple.Safari: Operation not permitted
+/Users/benforshay/Library/Caches/Homebrew/external_commands_list.txt
+/Users/benforshay/Library/Caches/Homebrew/all_commands_list.txt
+/Users/benforshay/Library/Caches/com.apple.AppleMediaServices/sap-setup-cert.txt
+/Users/benforshay/Library/Caches/com.apple.cache_delete/CacheDeletePurgeHistory.txt
+find: /Users/benforshay/Library/Caches/com.apple.ap.adprivacyd: Operation not permitted
+/Users/benforshay/Public/Full Circle with Michael Palin/If this torrent is dead.txt
+/Users/benforshay/Public/Full Circle with Michael Palin/About this torrent.txt
+/Users/benforshay/Public/Full Circle with Michael Palin/[TGx]Downloaded from torrentgalaxy.to.txt
+/Users/benforshay/Public/Full Circle with Michael Palin/Downloaded from Demonoid - www.dnoid.is.txt
+find: /Users/benforshay/.Trash: Operation not permitted
+/Users/benforshay/.vscode/extensions/ms-python.vscode-pylance-2025.4.1/ThirdPartyNotices-Repository.txt
+/Users/benforshay/.vscode/extensions/ms-python.vscode-pylance-2025.4.1/NOTICE.txt
+/Users/benforshay/.vscode/extensions/ms-python.vscode-pylance-2025.4.1/LICENSE.txt
+/Users/benforshay/.vscode/extensions/ms-python.python-2026.0.0-darwin-x64/ThirdPartyNotices-Repository.txt
+/Users/benforshay/.vscode/extensions/ms-python.python-2026.0.0-darwin-x64/ThirdPartyNotices.txt
+/Users/benforshay/.vscode/extensions/ms-python.python-2026.0.0-darwin-x64/requirements.txt
+/Users/benforshay/.vscode/extensions/ms-python.python-2026.0.0-darwin-x64/LICENSE.txt
+/Users/benforshay/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-x64/ThirdPartyNotices.txt
+/Users/benforshay/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-x64/LICENSE.txt
+benforshay@Bens-iMac ~ % find ~ -type f -not -path '*/.*' -mtime -1 | head -n 10
+^C
+benforshay@Bens-iMac ~ % mkdir -p ~/Developer/my-project
+benforshay@Bens-iMac ~ % && cd ~/Developer/my-project
+zsh: parse error near `&&'
+benforshay@Bens-iMac ~ % mkdir -p ~/Developer/my-project
+benforshay@Bens-iMac ~ % cd ~/Developer/my-project
+benforshay@Bens-iMac my-project % git init
+Initialized empty Git repository in /Users/benforshay/Developer/my-project/.git/
+benforshay@Bens-iMac my-project % touch main.py
+benforshay@Bens-iMac my-project % git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	main.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+benforshay@Bens-iMac my-project % git add main.py
+benforshay@Bens-iMac my-project % git commit -m "first-save"
+[master (root-commit) d04b285] first-save
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 main.py
+benforshay@Bens-iMac my-project % mpv --no-video "https:https://www.youtube.com/watch?v=v2NjCGVxA8I"
+zsh: command not found: mpv
+benforshay@Bens-iMac my-project % brew install mpv
+✔︎ JSON API formula.jws.json                                                                                         Downloaded   32.0MB/ 32.0MB
+✔︎ JSON API cask.jws.json                                                                                            Downloaded   15.3MB/ 15.3MB
+Warning: You are using macOS 10.15.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+==> Fetching downloads for: mpv
+✔︎ API Source mpv.rb                                                                                                 Verified      4.0KB/  4.0KB
+mpv: A full installation of Xcode.app is required to compile
+this software. Installing just the Command Line Tools is not sufficient.
+
+Xcode can be installed from the App Store.
+deno: A full installation of Xcode.app 15.0 is required to compile
+this software. Installing just the Command Line Tools is not sufficient.
+
+Xcode 15.0 cannot be installed on macOS 10.15.
+You must upgrade your version of macOS.
+molten-vk: A full installation of Xcode.app 11.7 is required to compile
+this software. Installing just the Command Line Tools is not sufficient.
+
+Xcode can be installed from the App Store.
+Error: mpv: Unsatisfied requirements failed this build.
+benforshay@Bens-iMac my-project % brew install --cask mpv
+==> Downloading https://laboratory.stolendata.net/~djinn/mpv_osx/mpv-0.35.0.tar.gz
+######################################################################################################################################## 100.0%
+==> Installing Cask stolendata-mpv
+==> Moving App 'mpv.app' to '/Applications/mpv.app'
+==> Linking Binary 'mpv' to '/usr/local/bin/mpv'
+==> Linking Manpage 'mpv.1' to '/usr/local/share/man/man1/mpv.1'
+🍺  stolendata-mpv was successfully installed!
+Warning: You are using macOS 10.15.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+benforshay@Bens-iMac my-project % mpv --no-video "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+zsh: killed     mpv --no-video "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+benforshay@Bens-iMac my-project % brew link mpv
+Error: No such keg: /usr/local/Cellar/mpv
+benforshay@Bens-iMac my-project % brew uninstall --force mpv
+==> Uninstalling Cask stolendata-mpv
+==> Unlinking Binary '/usr/local/bin/mpv'
+==> Unlinking Manpage '/usr/local/share/man/man1/mpv.1'
+==> Purging files for version 0.35.0 of Cask stolendata-mpv
+benforshay@Bens-iMac my-project % brew install --cask stolendata-mpv
+✔︎ JSON API formula.jws.json                                                                                         Downloaded   32.0MB/ 32.0MB
+✔︎ JSON API cask.jws.json                                                                                            Downloaded   15.3MB/ 15.3MB
+==> Downloading https://laboratory.stolendata.net/~djinn/mpv_osx/mpv-0.35.0.tar.gz
+Already downloaded: /Users/benforshay/Library/Caches/Homebrew/downloads/ed3c9b98aba94a00ba592dc5f024b115950e2414e7167ea698c96a9f675e441f--mpv-0.35.0.tar.gz
+==> Installing Cask stolendata-mpv
+==> Moving App 'mpv.app' to '/Applications/mpv.app'
+==> Linking Binary 'mpv' to '/usr/local/bin/mpv'
+==> Linking Manpage 'mpv.1' to '/usr/local/share/man/man1/mpv.1'
+🍺  stolendata-mpv was successfully installed!
+Warning: You are using macOS 10.15.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+benforshay@Bens-iMac my-project % ln -sf /Applications/mpv.app/Contents/MacOS/mpv /usr/local/bin/mpv
+benforshay@Bens-iMac my-project % xattr -d com.apple.quarantine /Applications/mpv.app
+benforshay@Bens-iMac my-project % mpv --no-video "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+[ytdl_hook]  
+[ytdl_hook] youtube-dl failed: not found or not enough permissions 
+Failed to recognize file format.
+
+Exiting... (Errors when loading file)
+benforshay@Bens-iMac my-project % brew install yt-dlp
+Warning: You are using macOS 10.15.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+==> Fetching downloads for: yt-dlp
+✔︎ API Source yt-dlp.rb                                                                                              Verified      4.4KB/  4.4KB
+deno: A full installation of Xcode.app 15.0 is required to compile
+this software. Installing just the Command Line Tools is not sufficient.
+
+Xcode 15.0 cannot be installed on macOS 10.15.
+You must upgrade your version of macOS.
+Error: yt-dlp: An unsatisfied requirement failed this build.
+benforshay@Bens-iMac my-project % sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+Password:
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 3114k  100 3114k    0     0  2289k      0  0:00:01  0:00:01 --:--:-- 4068k
+benforshay@Bens-iMac my-project % sudo chmod a+rx /usr/local/bin/yt-dlp
+benforshay@Bens-iMac my-project % xattr -d com.apple.quarantine /usr/local/bin/yt-dlp
+xattr: [Errno 13] Permission denied: '/usr/local/bin/yt-dlp'
+benforshay@Bens-iMac my-project % mpv --no-video "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+[ytdl_hook] ERROR: [youtube] dQw4w9WgXcQ: Unable to download API page: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081) (caused by CertificateVerifyError('[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')); please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U 
+[ytdl_hook] youtube-dl failed: unexpected error occurred 
+Failed to recognize file format.
+
+Exiting... (Errors when loading file)
+benforshay@Bens-iMac my-project % sudo xattr -d com.apple.quarantine /usr/local/bin/yt-dlp
+xattr: /usr/local/bin/yt-dlp: No such xattr: com.apple.quarantine
+benforshay@Bens-iMac my-project % mpv --no-video --ytdl-raw-options=no-check-certificates "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+Expected '=' and a value.
+Error parsing option ytdl-raw-options (option parameter could not be parsed)
+Setting commandline option --ytdl-raw-options=no-check-certificates failed.
+Exiting... (Fatal error)
+benforshay@Bens-iMac my-project % mpv --no-video --ytdl-raw-options="no-check-certificates:" "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+Expected '=' and a value.
+Error parsing option ytdl-raw-options (option parameter could not be parsed)
+Setting commandline option --ytdl-raw-options=no-check-certificates: failed.
+Exiting... (Fatal error)
+benforshay@Bens-iMac my-project % echo "--no-check-certificates" > ~/.yt-dlp.conf
+benforshay@Bens-iMac my-project % mpv --no-video "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+[ytdl_hook] ERROR: [youtube] dQw4w9WgXcQ: Unable to download API page: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081) (caused by CertificateVerifyError('[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')); please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U 
+[ytdl_hook] youtube-dl failed: unexpected error occurred 
+Failed to recognize file format.
+
+Exiting... (Errors when loading file)
+benforshay@Bens-iMac my-project %         python3 -m pip install --upgrade certifi
+Collecting certifi
+  Downloading certifi-2026.1.4-py3-none-any.whl.metadata (2.5 kB)
+Downloading certifi-2026.1.4-py3-none-any.whl (152 kB)
+Installing collected packages: certifi
+Successfully installed certifi-2026.1.4
+
+[notice] A new release of pip is available: 25.3 -> 26.0.1
+[notice] To update, run: python3 -m pip install --upgrade pip
+benforshay@Bens-iMac my-project % mpv --no-video --ytdl-raw-options="prefer-insecure:,no-check-certificates:" "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+Expected '=' and a value.
+Error parsing option ytdl-raw-options (option parameter could not be parsed)
+Setting commandline option --ytdl-raw-options=prefer-insecure:,no-check-certificates: failed.
+Exiting... (Fatal error)
+benforshay@Bens-iMac my-project %       export PYTHONHTTPSVERIFY=0
+benforshay@Bens-iMac my-project % mpv --no-video "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+ (+) Audio --aid=1 --alang=eng (*) (opus 2ch 48000Hz)
+     Subs  --sid=1 --slang=de-DE 'German (Germany)' (null) (external)
+     Subs  --sid=2 --slang=en 'English' (null) (external)
+     Subs  --sid=3 --slang=es-419 'Spanish (Latin America)' (null) (external)
+     Subs  --sid=4 --slang=ja 'Japanese' (null) (external)
+     Subs  --sid=5 --slang=pt-BR 'Portuguese (Brazil)' (null) (external)
+AO: [coreaudio] 48000Hz stereo 2ch floatp
+A: 00:01:58 / 00:03:33 (56%) Cache: 94s/3MB
+[input] No key binding found for key '-'.
+[input] No key binding found for key '-'.
+[input] No key binding found for key 'n'.
+[input] No key binding found for key '-'.
+[input] No key binding found for key '"'.
+[input] No key binding found for key 'h'.
+[input] No key binding found for key ':'.
+[input] No key binding found for key 'y'.
+[input] No key binding found for key 'b'.
+[input] No key binding found for key 'c'.
+[input] No key binding found for key 'a'.
+[input] No key binding found for key 'c'.
+[input] No key binding found for key 'h'.
+[input] No key binding found for key '?'.
+[input] No key binding found for key '='.
+[input] No key binding found for key 'g'.
+[input] No key binding found for key 'X'.
+[input] No key binding found for key 'c'.
+[input] No key binding found for key '"'.
+
+
+
+
+
+
+
+
+
+(Paused) A: 00:02:06 / 00:03:33 (59%) Cache: 86s/3MB
+[input] No key binding found for key 'c'.
+(Paused) A: 00:02:07 / 00:03:33 (60%) Cache: 84s/3MB
+[input] No key binding found for key 'c'.
+(Paused) A: 00:02:08 / 00:03:33 (60%) Cache: 84s/3MB
+Taking screenshot failed.
+Sub position: 101/100
+(Paused) A: 00:02:08 / 00:03:33 (60%) Cache: 84s/3MB
+[input] No key binding found for key 'g'.
+[input] No key binding found for key 'h'.
+[input] No key binding found for key 'y'.
+(Paused) A: 00:02:08 / 00:03:33 (60%) Cache: 84s/3MB
+[input] No key binding found for key 'h'.
+[input] No key binding found for key 'c'.
+Subtitles hidden
+(Paused) A: 00:02:08 / 00:03:33 (60%) Cache: 84s/3MB
+[input] No key binding found for key 'a'.
+Mute: no
+(Paused) A: 00:02:08 / 00:03:33 (60%) Cache: 84s/3MB
+[input] No key binding found for key 'n'.
+A-B loop start: 00:02:08
+A: 00:02:09 / 00:03:33 (61%) Cache: 83s/3MB
+[input] No key binding found for key 'k'.
+
+A: 00:02:12 / 00:03:33 (62%) Cache: 80s/3MB
+[input] No key binding found for key '='.
+A: 00:02:12 / 00:03:33 (62%) Cache: 79s/3MB
+[input] No key binding found for key '='.
+A: 00:02:13 / 00:03:33 (63%) Cache: 79s/3MB
+[input] No key binding found for key '='.
+A: 00:02:13 / 00:03:33 (63%) Cache: 79s/3MB
+[input] No key binding found for key '='.
+A: 00:02:13 / 00:03:33 (63%) Cache: 78s/3MB
+[input] No key binding found for key '='.
+A: 00:02:13 / 00:03:33 (63%) Cache: 78s/3MB
+[input] No key binding found for key '='.
+A: 00:02:15 / 00:03:33 (63%) Cache: 77s/3MB
+[input] No key binding found for key '-'.
+A: 00:02:15 / 00:03:33 (64%) Cache: 77s/3MB
+[input] No key binding found for key '-'.
+A: 00:02:15 / 00:03:33 (64%) Cache: 76s/3MB
+[input] No key binding found for key '-'.
+A: 00:02:25 / 00:03:33 (68%) Cache: 67s/2MB
+[input] No key binding found for key 'b'.
+A: 00:02:25 / 00:03:33 (68%) Cache: 66s/2MB
+[input] No key binding found for key 'g'.
+A: 00:02:27 / 00:03:33 (69%) Cache: 64s/2MB
+[input] No key binding found for key 'b'.
+A: 00:02:27 / 00:03:33 (69%) Cache: 64s/2MB
+[input] No key binding found for key 'g'.
+A: 00:02:28 / 00:03:33 (70%) Cache: 63s/2MB
+[input] No key binding found for key 'g'.
+A: 00:03:32 / 00:03:33 (100%) Cache: 0.0s/1KB
+
+Exiting... (End of file)
+benforshay@Bens-iMac my-project % mpv --no-video "https://www.youtube.com/watch?v=v2NjCGVxA8I" &
+[1] 52038
+benforshay@Bens-iMac my-project %  (+) Audio --aid=1 --alang=eng (*) (opus 2ch 48000Hz)
+AO: [coreaudio] 48000Hz stereo 2ch floatp
+python3 -m pip install --upgrade certifi
+Requirement already satisfied: certifi in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (2026.1.4)
+
+[notice] A new release of pip is available: 25.3 -> 26.0.1
+[notice] To update, run: python3 -m pip install --upgrade pip
+benforshay@Bens-iMac my-project % python3 -m pip install --upgrade pip
+Requirement already satisfied: pip in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (25.3)
+Collecting pip
+  Downloading pip-26.0.1-py3-none-any.whl.metadata (4.7 kB)
+Downloading pip-26.0.1-py3-none-any.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 1.6 MB/s  0:00:01
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 25.3
+    Uninstalling pip-25.3:
+      Successfully uninstalled pip-25.3
+  WARNING: The scripts pip, pip3 and pip3.14 are installed in '/Library/Frameworks/Python.framework/Versions/3.14/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed pip-26.0.1
+benforshay@Bens-iMac my-project % python3 -m pip install --upgrade certifi
+Requirement already satisfied: certifi in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (2026.1.4)
+benforshay@Bens-iMac my-project %     openssl x509 -inform der -in ~/Downloads/isrgrootx1.der -out ~/Downloads/isrgrootx1.pem
+Could not open file or uri for loading certificate from /Users/benforshay/Downloads/isrgrootx1.der: No such file or directory
+benforshay@Bens-iMac my-project % sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain ~/Downloads/isrgrootx1.pem
+Password:
+***Error reading file /Users/benforshay/Downloads/isrgrootx1.pem
+Error reading file /Users/benforshay/Downloads/isrgrootx1.pem
+benforshay@Bens-iMac my-project %        find ~ -name "isrgrootx1.der"
+find: /Users/benforshay/Library/Application Support/MobileSync: Operation not permitted
+find: /Users/benforshay/Library/Application Support/CallHistoryTransactions: Operation not permitted
+find: /Users/benforshay/Library/Application Support/com.apple.sharedfilelist: Operation not permitted
+find: /Users/benforshay/Library/Application Support/com.apple.TCC: Operation not permitted
+find: /Users/benforshay/Library/Application Support/FileProvider: Operation not permitted
+find: /Users/benforshay/Library/Application Support/CallHistoryDB: Operation not permitted
+find: /Users/benforshay/Library/Autosave Information: Operation not permitted
+find: /Users/benforshay/Library/IdentityServices: Operation not permitted
+find: /Users/benforshay/Library/Messages: Operation not permitted
+find: /Users/benforshay/Library/HomeKit: Operation not permitted
+find: /Users/benforshay/Library/Sharing: Operation not permitted
+find: /Users/benforshay/Library/Mail: Operation not permitted
+find: /Users/benforshay/Library/Safari: Operation not permitted
+find: /Users/benforshay/Library/Suggestions: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.VoiceMemos: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.archiveutility: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.Home: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.Safari: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.iChat: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.CloudDocs.MobileDocumentsFileProvider: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.mail: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.news: Operation not permitted
+find: /Users/benforshay/Library/Containers/com.apple.stocks: Operation not permitted
+find: /Users/benforshay/Library/PersonalizationPortrait: Operation not permitted
+find: /Users/benforshay/Library/Metadata/CoreSpotlight: Operation not permitted
+find: /Users/benforshay/Library/Metadata/com.apple.IntelligentSuggestions: Operation not permitted
+find: /Users/benforshay/Library/Cookies: Operation not permitted
+find: /Users/benforshay/Library/Caches/CloudKit: Operation not permitted
+find: /Users/benforshay/Library/Caches/com.apple.Safari: Operation not permitted
+find: /Users/benforshay/Library/Caches/com.apple.ap.adprivacyd: Operation not permitted
+find: /Users/benforshay/.Trash: Operation not permitted
+benforshay@Bens-iMac my-project %            curl -k -o ~/isrgrootx1.der https://letsencrypt.org/certs/isrgrootx1.der && sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain ~/isrgrootx1.der
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1391  100  1391    0     0   7025      0 --:--:-- --:--:-- --:--:--  7025
+Password:
+benforshay@Bens-iMac my-project % security find-certificate -c "ISRG Root X1"
+keychain: "/Users/benforshay/Library/Keychains/login.keychain-db"
+version: 512
+class: 0x80001000 
+attributes:
+    "alis"<blob>="ISRG Root X1"
+    "cenc"<uint32>=0x00000003 
+    "ctyp"<uint32>=0x00000001 
+    "hpky"<blob>=0x79B459E67BB6E5E40173800888C81A58F6E99B6E  "y\264Y\346{\266\345\344\001s\200\010\210\310\032X\366\351\233n"
+    "issu"<blob>=0x304F310B300906035504061302555331293027060355040A1320494E5445524E45542053454355524954592052455345415243482047524F5550311530130603550403130C4953524720524F4F54205831  "0O1\0130\011\006\003U\004\006\023\002US1)0'\006\003U\004\012\023 INTERNET SECURITY RESEARCH GROUP1\0250\023\006\003U\004\003\023\014ISRG ROOT X1"
+    "labl"<blob>="ISRG Root X1"
+    "skid"<blob>=0x79B459E67BB6E5E40173800888C81A58F6E99B6E  "y\264Y\346{\266\345\344\001s\200\010\210\310\032X\366\351\233n"
+    "snbr"<blob>=0x008210CFB0D240E3594463E0BB63828B00  "\000\202\020\317\260\322@\343YDc\340\273c\202\213\000"
+    "subj"<blob>=0x304F310B300906035504061302555331293027060355040A1320494E5445524E45542053454355524954592052455345415243482047524F5550311530130603550403130C4953524720524F4F54205831  "0O1\0130\011\006\003U\004\006\023\002US1)0'\006\003U\004\012\023 INTERNET SECURITY RESEARCH GROUP1\0250\023\006\003U\004\003\023\014ISRG ROOT X1"
+benforshay@Bens-iMac my-project % curl -I https://google.com
+HTTP/2 301 
+location: https://www.google.com/
+content-type: text/html; charset=UTF-8
+content-security-policy-report-only: object-src 'none';base-uri 'self';script-src 'nonce-ElAmSlpHiowzH6orrG74YQ' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+reporting-endpoints: default="//www.google.com/httpservice/retry/jserror?ei=mf-PabiJJdOliLMP2IfAgQ0&cad=crash&error=Page%20Crash&jsel=1"
+date: Sat, 14 Feb 2026 04:52:41 GMT
+expires: Mon, 16 Mar 2026 04:52:41 GMT
+cache-control: public, max-age=2592000
+server: gws
+content-length: 220
+x-xss-protection: 0
+x-frame-options: SAMEORIGIN
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+benforshay@Bens-iMac my-project %    python3 -m pip install --upgrade certifi
+Requirement already satisfied: certifi in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (2026.1.4)
+benforshay@Bens-iMac my-project % brew install openssl
+✔︎ JSON API formula.jws.json                                                                                                                            Downloaded   32.0MB/ 32.0MB
+✔︎ JSON API cask.jws.json                                                                                                                               Downloaded   15.3MB/ 15.3MB
+Warning: openssl@3 3.6.1 is already installed and up-to-date.
+To reinstall 3.6.1, run:
+  brew reinstall openssl@3
+benforshay@Bens-iMac my-project %      brew link --force openssl@3
+Warning: Already linked: /usr/local/Cellar/openssl@3/3.6.1
+To relink, run:
+  brew unlink openssl@3 && brew link openssl@3
+benforshay@Bens-iMac my-project %        open /System/Applications/Utilities/Keychain\ Access.app
+benforshay@Bens-iMac my-project % curl -k -o ~/Desktop/isrgrootx1.der https://letsencrypt.org/certs/isrgrootx1.der
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1391  100  1391    0     0   8859      0 --:--:-- --:--:-- --:--:--  8803
+benforshay@Bens-iMac my-project % sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain ~/Desktop/isrgrootx1.der
+Password:
+benforshay@Bens-iMac my-project % curl -k -o ~/Desktop/isrgrootx1.der https://letsencrypt.org/certs/isrgrootx1.der
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1391  100  1391    0     0   6265      0 --:--:-- --:--:-- --:--:--  6265
+benforshay@Bens-iMac my-project % curl -I https://google.com
+HTTP/2 301 
+location: https://www.google.com/
+content-type: text/html; charset=UTF-8
+content-security-policy-report-only: object-src 'none';base-uri 'self';script-src 'nonce-6JtJPFaJ7dFIMGHVW5M4ZQ' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+reporting-endpoints: default="//www.google.com/httpservice/retry/jserror?ei=wQKQaYC5OZug5NoPvtvDiA0&cad=crash&error=Page%20Crash&jsel=1"
+date: Sat, 14 Feb 2026 05:06:09 GMT
+expires: Mon, 16 Mar 2026 05:06:09 GMT
+cache-control: public, max-age=2592000
+server: gws
+content-length: 220
+x-xss-protection: 0
+x-frame-options: SAMEORIGIN
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+benforshay@Bens-iMac my-project % echo 'export PATH="/Library/Frameworks/Python.framework/Versions/3.14/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+benforshay@Bens-iMac my-project % # Download DigiCert Global Root G2
+curl -k -o ~/Desktop/digicert_g2.der https://cacerts.digicert.com/DigiCertGlobalRootG2.crt
+
+# Download Amazon Root CA 1
+curl -k -o ~/Desktop/amazon_root_ca1.der https://www.amazontrust.com/repository/AmazonRootCA1.cer
+zsh: command not found: #
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   914  100   914    0     0   4887      0 --:--:-- --:--:-- --:--:--  4887
+zsh: command not found: #
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   837  100   837    0     0   2744      0 --:--:-- --:--:-- --:--:--  2744
+benforshay@Bens-iMac my-project % sudo security delete-certificate -c "ISRG Root X1" /Library/Keychains/System.keychain
+Password:
+benforshay@Bens-iMac my-project % sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain ~/Desktop/isrgrootx1.der
+***Error reading file /Users/benforshay/Desktop/isrgrootx1.der
+Error reading file /Users/benforshay/Desktop/isrgrootx1.der
+benforshay@Bens-iMac my-project % curl -k -o ~/Desktop/isrgrootx1.der https://letsencrypt.org/certs/isrgrootx1.der && sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain ~/Desktop/isrgrootx1.der
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1391  100  1391    0     0   6886      0 --:--:-- --:--:-- --:--:--  6852
+benforshay@Bens-iMac my-project % curl -I https://google.com
+HTTP/2 301 
+location: https://www.google.com/
+content-type: text/html; charset=UTF-8
+content-security-policy-report-only: object-src 'none';base-uri 'self';script-src 'nonce-GLN_7yDjAAP2bEuvXnqtUA' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+reporting-endpoints: default="//www.google.com/httpservice/retry/jserror?ei=LAaQacHIKP7Y5NoPgfv1kAQ&cad=crash&error=Page%20Crash&jsel=1"
+date: Sat, 14 Feb 2026 05:20:44 GMT
+expires: Mon, 16 Mar 2026 05:20:44 GMT
+cache-control: public, max-age=2592000
+server: gws
+content-length: 220
+x-xss-protection: 0
+x-frame-options: SAMEORIGIN
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+benforshay@Bens-iMac my-project % curl -k -o ~/Desktop/amazon.cer https://www.amazontrust.com/repository/AmazonRootCA1.cer
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   837  100   837    0     0   3269      0 --:--:-- --:--:-- --:--:--  3269
+benforshay@Bens-iMac my-project % echo 'export PATH="/Library/Frameworks/Python.framework/Versions/3.14/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
+benforshay@Bens-iMac my-project % echo 'export PATH="/Library/Frameworks/Python.framework/Versions/3.14/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
+benforshay@Bens-iMac my-project % brew update
+==> Updating Homebrew...
+==> Homebrew collects anonymous analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics have been recorded yet (nor will be during this `brew` run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+Updated 2 taps (homebrew/core and homebrew/cask).
+==> New Formulae
+ls-hpack: HTTP/2 HPACK header compression library
+umoci: Reference OCI implementation for creating, modifying and inspecting images
+==> New Casks
+codexmonitor: Monitor Codex activity
+benforshay@Bens-iMac my-project % python3 -m pip install --upgrade pip setuptools wheel
+Requirement already satisfied: pip in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (26.0.1)
+Collecting setuptools
+  Downloading setuptools-82.0.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting wheel
+  Downloading wheel-0.46.3-py3-none-any.whl.metadata (2.4 kB)
+Collecting packaging>=24.0 (from wheel)
+  Downloading packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+Downloading setuptools-82.0.0-py3-none-any.whl (1.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 1.8 MB/s  0:00:00
+Downloading wheel-0.46.3-py3-none-any.whl (30 kB)
+Downloading packaging-26.0-py3-none-any.whl (74 kB)
+Installing collected packages: setuptools, packaging, wheel
+Successfully installed packaging-26.0 setuptools-82.0.0 wheel-0.46.3
+benforshay@Bens-iMac my-project % python3 -m pip install --upgrade certifi
+Requirement already satisfied: certifi in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (2026.1.4)
+benforshay@Bens-iMac my-project % git commit -am "Verified Homebrew and Python SSL connectivity"
+On branch master
+nothing to commit, working tree clean
+benforshay@Bens-iMac my-project % brew install ca-certificates
+Warning: ca-certificates 2025-12-02 is already installed and up-to-date.
+To reinstall 2025-12-02, run:
+  brew reinstall ca-certificates
+brew postinstall openssl@3%                                                                                                                                                       benforshay@Bens-iMac my-project % brew postinstall openssl@3
+==> Postinstalling openssl@3
+benforshay@Bens-iMac my-project % echo 'export PATH="/Library/Frameworks/Python.framework/Versions/3.14/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+benforshay@Bens-iMac my-project % git commit -am "Updated Homebrew CA-certs and fixed Python PATH"
+On branch master
+nothing to commit, working tree clean
+benforshay@Bens-iMac my-project % echo 'export PATH="/Library/Frameworks/Python.framework/Versions/3.14/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
+benforshay@Bens-iMac my-project % brew install openssl
+✔︎ JSON API formula.jws.json                                                                                                                            Downloaded   32.0MB/ 32.0MB
+✔︎ JSON API cask.jws.json                                                                                                                               Downloaded   15.3MB/ 15.3MB
+Warning: openssl@3 3.6.1 is already installed and up-to-date.
+To reinstall 3.6.1, run:
+  brew reinstall openssl@3
+benforshay@Bens-iMac my-project % python3 -m pip install --upgrade certifi
+Requirement already satisfied: certifi in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (2026.1.4)
+benforshay@Bens-iMac my-project % brew install openssl
+Warning: openssl@3 3.6.1 is already installed and up-to-date.
+To reinstall 3.6.1, run:
+  brew reinstall openssl@3
+benforshay@Bens-iMac my-project %          security find-certificate -c "Amazon Root CA 1" -p /Library/Keychains/System.keychain | openssl x509 -text -noout | grep "Subject:"
+        Subject: C=US, O=Amazon, CN=Amazon Root CA 1
+benforshay@Bens-iMac my-project % 

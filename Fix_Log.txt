@@ -1,0 +1,56 @@
+   50          python3 -m pip install --upgrade certifi
+   51  mpv --no-video --ytdl-raw-options="prefer-insecure:,no-check-certificates:" "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+   52        export PYTHONHTTPSVERIFY=0
+   53  mpv --no-video "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+   54  mpv --no-video "https://www.youtube.com/watch?v=v2NjCGVxA8I" &
+   55  python3 -m pip install --upgrade certifi
+   56  python3 -m pip install --upgrade pip
+   57  python3 -m pip install --upgrade certifi
+   58      openssl x509 -inform der -in ~/Downloads/isrgrootx1.der -out ~/Downloads/isrgrootx1.pem
+   59  sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain ~/Downloads/isrgrootx1.pem
+   60         find ~ -name "isrgrootx1.der"
+   61             curl -k -o ~/isrgrootx1.der https://letsencrypt.org/certs/isrgrootx1.der && sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain ~/isrgrootx1.der
+   62  security find-certificate -c "ISRG Root X1"
+   63  curl -I https://google.com
+   64     python3 -m pip install --upgrade certifi
+   65  brew install openssl
+   66       brew link --force openssl@3
+   67         open /System/Applications/Utilities/Keychain\ Access.app
+   68  curl -k -o ~/Desktop/isrgrootx1.der https://letsencrypt.org/certs/isrgrootx1.der
+   69  sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain ~/Desktop/isrgrootx1.der
+   70  curl -k -o ~/Desktop/isrgrootx1.der https://letsencrypt.org/certs/isrgrootx1.der
+   71  curl -I https://google.com
+   72  echo 'export PATH="/Library/Frameworks/Python.framework/Versions/3.14/bin:$PATH"' >> ~/.zshrc\nsource ~/.zshrc
+   73  # Download DigiCert Global Root G2\ncurl -k -o ~/Desktop/digicert_g2.der https://cacerts.digicert.com/DigiCertGlobalRootG2.crt\n\n# Download Amazon Root CA 1\ncurl -k -o ~/Desktop/amazon_root_ca1.der https://www.amazontrust.com/repository/AmazonRootCA1.cer
+   74  sudo security delete-certificate -c "ISRG Root X1" /Library/Keychains/System.keychain
+   75  sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain ~/Desktop/isrgrootx1.der
+   76  curl -k -o ~/Desktop/isrgrootx1.der https://letsencrypt.org/certs/isrgrootx1.der && sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain ~/Desktop/isrgrootx1.der
+   77  curl -I https://google.com
+   78  curl -k -o ~/Desktop/amazon.cer https://www.amazontrust.com/repository/AmazonRootCA1.cer
+   79  echo 'export PATH="/Library/Frameworks/Python.framework/Versions/3.14/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
+   80  echo 'export PATH="/Library/Frameworks/Python.framework/Versions/3.14/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
+   81  brew update
+   82  python3 -m pip install --upgrade pip setuptools wheel
+   83  python3 -m pip install --upgrade certifi
+   84  git commit -am "Verified Homebrew and Python SSL connectivity"
+   85  brew install ca-certificates
+   86  brew postinstall openssl@3
+   87  echo 'export PATH="/Library/Frameworks/Python.framework/Versions/3.14/bin:$PATH"' >> ~/.zshrc\nsource ~/.zshrc
+   88  git commit -am "Updated Homebrew CA-certs and fixed Python PATH"
+   89  echo 'export PATH="/Library/Frameworks/Python.framework/Versions/3.14/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
+   90  brew install openssl
+   91  python3 -m pip install --upgrade certifi
+   92  brew install openssl
+   93           security find-certificate -c "Amazon Root CA 1" -p /Library/Keychains/System.keychain | openssl x509 -text -noout | grep "Subject:"
+   94  ssh -T git@github.com
+   95        ls -al ~/.ssh
+   96            ssh-keygen -t ed25519 -C "benforshay@gmail.com"
+   97  ls -al ~/.ssh
+   98     pbcopy < ~/.ssh/id_ed25519.pub
+   99  ssh -T git@github.com
+  100          git add . && git commit -m "Final Certificate and SSH Fixes for Catalina iMac"
+  101       git push origin master
+  102  git remote add origin https://github.com/benforshay/iMac-Catalina-Fixes.git
+  103   git push -u origin master
+  104      git remote set-url origin git@github.com:benforshay/iMac-Catalina-Fixes.git
+  105  git push -u origin master
