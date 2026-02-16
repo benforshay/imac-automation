@@ -1,5 +1,2 @@
-Fix_Log.txt
-catalina_fix_log.txt
-main.py
-permission_test.txt
 *.log
+.DS_Store
