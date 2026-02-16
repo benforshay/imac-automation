@@ -1,4 +1,4 @@
-tell application "iTerm"
+ tell application "iTerm"
     if (count of windows) is 0 then
         create window with default profile
     end if
