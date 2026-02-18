@@ -1,17 +1,20 @@
 import os
 
-def download_any_media(url):
-    # Determine if it's likely a video (YouTube/Vimeo) or an image
-    if "youtube.com" in url or "vimeo.com" in url:
-        print("🎥 Video detected. Using yt-dlp...")
-        command = f'yt-dlp -P ~/Downloads "{url}"'
-    else:
-        print("📸 Image/Gallery detected. Using curl fallback...")
-        # This uses the 'test_output.jpg' name we proved earlier
-        command = f'curl -L "{url}" -o ~/Downloads/downloaded_media.jpg'
+def download_photo_gallery(url):
+    print(f"🚀 Scraping gallery from: {url}")
     
-    os.system(command)
+    # -d tells it where to save (Downloads folder)
+    # --no-mtime prevents it from messing with 'date modified'
+    command = f'gallery-dl -d ~/Downloads --no-mtime "{url}"'
+    
+    status = os.system(command)
+    
+    if status == 0:
+        print("✅ Gallery saved to your Downloads folder!")
+    else:
+        print("❌ Site blocked the automatic scraper.")
+        print("💡 Try copying the 'Direct Image Link' (the one ending in .jpg) instead.")
 
-# You can change this URL to anything!
-link_from_browser = "https://i.redd.it/xj4n86f4yv9c1.jpeg"
-download_any_media(link_from_browser)
+# Test it with a Reddit Gallery or a Pinterest Link
+test_url = "https://www.reddit.com/r/pics/comments/18v6g0k/a_cool_photo/"
+download_photo_gallery(test_url)
