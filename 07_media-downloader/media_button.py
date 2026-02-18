@@ -1,20 +1,23 @@
 import os
 
-def download_photo_gallery(url):
-    print(f"🚀 Scraping gallery from: {url}")
-    
-    # -d tells it where to save (Downloads folder)
-    # --no-mtime prevents it from messing with 'date modified'
-    command = f'gallery-dl -d ~/Downloads --no-mtime "{url}"'
-    
-    status = os.system(command)
-    
-    if status == 0:
-        print("✅ Gallery saved to your Downloads folder!")
-    else:
-        print("❌ Site blocked the automatic scraper.")
-        print("💡 Try copying the 'Direct Image Link' (the one ending in .jpg) instead.")
+# 1. Path to a text file where you'll paste your links
+LINKS_FILE = "links_to_scrape.txt"
 
-# Test it with a Reddit Gallery or a Pinterest Link
-test_url = "https://www.reddit.com/r/pics/comments/18v6g0k/a_cool_photo/"
-download_photo_gallery(test_url)
+def bulk_scrape():
+    # Create the text file if it doesn't exist yet
+    if not os.path.exists(LINKS_FILE):
+        with open(LINKS_FILE, 'w') as f:
+            f.write("# Paste your links here, one per line\n")
+        print(f"Created {LINKS_FILE}. Paste your links there and run again!")
+        return
+
+    # Run gallery-dl using the text file as the source
+    # -i reads from a file, -d saves to Downloads
+    print(f"🕵️‍♂️ Scanning {LINKS_FILE} for image galleries...")
+    command = f'gallery-dl -i {LINKS_FILE} -d ~/Downloads'
+    
+    os.system(command)
+    print("\n✅ Bulk scrape finished. Check your Downloads folder!")
+
+if __name__ == "__main__":
+    bulk_scrape()
