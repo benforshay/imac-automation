@@ -3,7 +3,7 @@
 ## Project 1: The mpv Music Button
 - **Status:** Logic Complete / Desktop Shortcut Pending.
 - **Features:** Python-based YouTube audio player using `mpv`.
-- **Tools:** Python 3, Homebrew, GitHub Tokens, macOS Monterey.
+- **Tools:** Python 3, Homebrew, GitHub Tokens, macOS (Catalina & Monterey).
 
 ## Technical Wins Today:
 - **Security:** Fixed SSL certificates for Python web requests.
