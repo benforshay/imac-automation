@@ -22,4 +22,6 @@
 ### Technical Wins Today:
 - **Efficiency:** Successfully separated audio streams for high-quality downloads.
 - **Organization:** Integrated into the global `imac-automation` sync.
-<img src='./06_video_downloader/ui-terminal-downloader-proof.png' width='600'>
+
+## Project Proof
+<img src='./01_mpv_trigger/ui-terminal-downloader-proof.png' width='600'>
