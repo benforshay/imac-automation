@@ -19,7 +19,7 @@
 - **Features:** Python-based YouTube downloader with native audio support.
 - **Tools:** Python 3, `yt-dlp`, Homebrew.
 
-### Technical Wins Today:
+## Technical Wins Today:
 - **Efficiency:** Successfully separated audio streams for high-quality downloads.
 - **Organization:** Integrated into the global `imac-automation` sync.
 
