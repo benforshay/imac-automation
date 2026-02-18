@@ -13,4 +13,4 @@
 
 ## Project Proof
 <img src='./01_mpv_trigger/applescript-iterm-handshake.png' width='600'>
- 
+  
