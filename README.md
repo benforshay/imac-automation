@@ -14,7 +14,7 @@
 ## Project Proof
 <img src='./01_mpv_trigger/applescript-iterm-handshake.png' width='600'>
   
-  ## Project 2: Video Downloader
+## Project 2: Video Downloader
 - **Status:** Functional / Optimizing GUI.
 - **Features:** Python-based YouTube downloader with native audio support.
 - **Tools:** Python 3, `yt-dlp`, Homebrew.
