@@ -12,4 +12,5 @@
 - **Automation:** Created a custom `play` alias for the terminal.
 
 ## Project Proof
-<img src='./applescript-iterm-handshake.png' width='600'>
+<img src='./01_mpv_trigger/applescript-iterm-handshake.png' width='600'>
+ 
