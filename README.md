@@ -2,7 +2,7 @@
 
 ## Project 1: The mpv Music Button
 - **Status:** Logic Complete / Desktop Shortcut Pending.
-- **Features:** Python-based YouTube audio player using `mpv`.
+- **Features:** Python-based web audio player using `mpv`.
 - **Tools:** Python 3, Homebrew, GitHub Tokens, macOS (Catalina & Monterey).
 
 ## Technical Wins Today:
@@ -16,7 +16,7 @@
   
 ## Project 2: Video Downloader
 - **Status:** Functional / Optimizing GUI.
-- **Features:** Python-based YouTube downloader with native audio support.
+- **Features:** Python-based web downloader with native audio support.
 - **Tools:** Python 3, `yt-dlp`, Homebrew.
 
 ## Technical Wins Today:
