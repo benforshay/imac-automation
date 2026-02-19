@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 # Path setup
-BASE_DIR = os.path.expanduser("~/Developer/imac-automation/02_auto_logger")
+BASE_DIR = os.path.expanduser("~/Developer/imac-automation/02_security_auditor  ")
 FILE_TO_WATCH = os.path.join(BASE_DIR, "secure_notes.txt")
 HASH_LOG = os.path.join(BASE_DIR, "file_fingerprint.txt")
 AUDIT_REPORT = os.path.join(BASE_DIR, "security_audit.log")
