@@ -16,7 +16,7 @@
   
 ## Project 2: Video Downloader
 - **Status:** Functional / Optimizing GUI.
-- **Features:** Python-based web downloader with native audio support.
+- **Features:** Python-based media downloader with native audio support.
 - **Tools:** Python 3, `yt-dlp`, Homebrew.
 
 ## Technical Wins Today:
