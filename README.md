@@ -32,7 +32,7 @@ A collection of three core Python scripts designed to monitor system health and 
 
 ### 1. Security Auditor
 * **Purpose**: Scans for valid security certificates and permission errors.
-* ![Security Proof](02_security_auditor/security-auditor-proof.png)
+* ![Security Proof](02_security_auditor/integrity-verification-proof.png)
 
 ### 2. API Pulse
 * **Purpose**: Logs network latency and verifies external connectivity.
