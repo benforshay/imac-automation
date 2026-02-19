@@ -25,3 +25,19 @@
 
 ## Project Proof
 <img src='./06_video_downloader/ui-terminal-downloader-proof.png' width='600'>
+
+## 🛠️ Project 3:  The iMac Automation Trilogy
+
+A collection of three core Python scripts designed to monitor system health and security.
+
+### 1. Security Auditor
+* **Purpose**: Scans for valid security certificates and permission errors.
+* ![Security Proof](02_security_auditor/security-auditor-proof.png)
+
+### 2. API Pulse
+* **Purpose**: Logs network latency and verifies external connectivity.
+* ![Pulse Proof](03_api_pulse/api-pulse-logging-proof.png)
+
+### 3. Backup Integrity
+* **Purpose**: Tracks file size changes and verifies last-modified timestamps.
+* ![Backup Proof](04_backup_check/backup-check-proof.png)
