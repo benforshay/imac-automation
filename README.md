@@ -41,3 +41,10 @@ A collection of three core Python scripts designed to monitor system health and 
 ### 3. Backup Integrity
 * **Purpose**: Tracks file size changes and verifies last-modified timestamps.
 * ![Backup Proof](04_backup_check/backup-check-proof.png)
+
+
+## Project 4:  Master Auto-Logger
+A central utility to track session start and end times across all automation tasks.
+
+**Execution Proof:**
+![Auto Logger Proof](./00_master_logger/auto-logger-proof.png)
