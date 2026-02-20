@@ -48,3 +48,12 @@ A central utility to track session start and end times across all automation tas
 
 **Execution Proof:**
 ![Auto Logger Proof](./00_master_logger/auto-logger-proof.png)
+
+---
+## 05 | NASA Photo Grabber
+**Status:** Complete ✅  
+**Tech:** Python, NASA Web API, macOS Terminal  
+
+An automated script that reaches out to NASA's servers to grab the "Astronomy Picture of the Day." It handles dynamic file paths and protects against shell syntax errors during the download process.
+
+![NASA Grabber Proof](05_photo_grabber/nasa-grabber-proof.png)
