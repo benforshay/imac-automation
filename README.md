@@ -57,3 +57,15 @@ A central utility to track session start and end times across all automation tas
 An automated script that reaches out to NASA's servers to grab the "Astronomy Picture of the Day." It handles dynamic file paths and protects against shell syntax errors during the download process.
 
 ![NASA Grabber Proof](05_photo_grabber/nasa-grabber-proof.png)
+
+### Project 6: Audio Extractor
+* **Status:** Functional / Production
+* **Features:** Python-based extraction of high-fidelity FLAC audio from video.
+* **Tools:** Python 3, AppleScript, FFmpeg.
+
+**Technical Wins Today:**
+* **Automation:** Handled batch processing for large media libraries.
+* **Security:** Successfully bypassed legacy SSL handshake issues via remote deployment.
+
+**Project Proof:**
+![Audio Extractor Proof](./08_audio_extractor/audio-extractor-proof.png)
